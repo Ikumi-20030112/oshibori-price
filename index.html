@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new-price</title>
+    <!--css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h1>エクセル生成</h1>
+    <h2>流れに沿って選択・入力していってください</h2>
+    <!--make list-->
+    <h3>作りたい一覧を選ぶ</h3>
+    <div id="listTypeArea">
+        <label><input type="radio" name="listType" value="product"> 商品一覧価格表（画像有り）</label><br>
+        <label><input type="radio" name="listType" value="price"> 価格表（文字情報のみ）</label><br>
+        <label><input type="radio" name="listType" value="catalog"> 画像付きカタログ（顧客紹介用）</label><br>
+        <label><input type="radio" name="listType" value="custom"> カスタム一覧（全カスタマイズ）</label><br>
+    </div>
+    <button id="nextBtn">次へ</button>
+    <div id="fieldSelectArea"></div>
+    <div id="formArea"></div>
+
+    <!--choose color-->
+    <h3>メインカラーを選ぶ</h3>
+        <div id="colorSelectArea">
+            <label><input type="radio" name="mainColor" value="#004A77"> ブルー</label><br>
+            <label><input type="radio" name="mainColor" value="#2E7D32"> グリーン</label><br>
+            <label><input type="radio" name="mainColor" value="#F57C00"> オレンジ</label><br>
+            <label><input type="radio" name="mainColor" value="#424242"> グレー</label><br>
+            <label><input type="radio" name="mainColor" value="#C62828"> レッド</label><br>
+        </div>
+    <!--choose size-->
+    <h3>画像サイズ</h3>
+        <div id="imageSizeArea">
+            <label><input type="radio" name="imageSize" value="small"> 小（80px）</label><br>
+            <label><input type="radio" name="imageSize" value="large"> 大（150px）</label><br>
+        </div>
+
+    <!--script-->
+    <script src="assets/js/xlsx.full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
